@@ -1,0 +1,166 @@
+/* Reset och bas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+a {
+    color: #DC143C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+/* Header och nav */
+header {
+    background: #000000;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #DC143C;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px; /* Avstånd mellan logo och text */
+}
+
+
+.logo-img {
+    height: 80px; /* Justera storlek efter din SVG */
+    width: auto;
+}
+
+/* Responsiv logo på mobil */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 30px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Main sektioner */
+main {
+    margin-top: 80px;
+}
+
+.hero {
+    background: linear-gradient(rgba(220,20,60,0.8), rgba(0,0,0,0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23DC143C" width="100" height="100" opacity="0.1"/></svg>');
+    text-align: center;
+    padding: 100px 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #DC143C;
+    margin-bottom: 1rem;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.section h2 {
+    color: #DC143C;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.section li {
+    background: #DC143C;
+    color: #000000;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid #DC143C;
+}
+
+/* Responsiv */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: #000000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
