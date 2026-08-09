@@ -125,6 +125,34 @@ main {
     border-radius: 5px;
 }
 
+.pass-installt {
+    display: block;
+    margin-top: 0.5rem;
+    background: #FFFFFF;
+    color: #DC143C;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.pass-upplagg {
+    display: block;
+    margin-top: 0.5rem;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.pass-upplagg summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pass-upplagg p {
+    margin-top: 0.5rem;
+}
+
 /* Footer */
 footer {
     background: #000000;
